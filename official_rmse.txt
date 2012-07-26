@@ -1,0 +1,6 @@
+RMSE:   Date Time (UCT):     Notes:
+0.9185  2007-03-13 05:32:14  sliding window features [20-80] probe rmse:0.916090 (6)
+0.9353  2007-03-15 05:56:21  sliding window WP features [5-121] probe rmse:0.766825 (7)
+1.0006  2007-03-16 05:59:52  sliding window WP features [64-123] probe rmse:0.912198 (7b)
+0.9214  2007-03-17 06:09:32  sliding window features [25-47] probe rmse:0.919465 (8a)
+0.9158  2007-03-18 15:37:23  sliding/growing window [48-99] probe rmse:0.913752 (9)

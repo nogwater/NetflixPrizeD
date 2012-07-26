@@ -1,0 +1,27 @@
+# Netflix Data
+check_format.pl.gz
+download/*
+d/feature_titles/*
+d/features/*
+d/*.map
+fcust.txt
+fmovies.txt
+
+# Misc. Notes
+best_run_so_far.txt
+research/*
+
+
+# Compiled
+*.exe
+*.obj
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

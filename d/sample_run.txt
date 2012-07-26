@@ -1,0 +1,24 @@
+
+sample1:
+learnRate = 0.001
+//given
+f_1_m[movieIndex] = 3.6
+f_1_c[custPos] = 1
+actualRating = 5;
+//guess
+predictedRating = 3.6 = f_1_c[custPos] * f_1_m[movieIndex];
+error = actualRating - predictedRating
+//error = 1.4
+errorL = 0.0014 = error * learnRate
+//learn
+f_1_c[custPos] += errorL * f_1_m[movieIndex];
+//f_1_c[custPos] = 1 + (0.0014 * 3.6) = 1.00504
+f_1_m[movieIndex] += errorL * f_1_c[custPos];
+//f_1_m[movieIndex] = 3.6 + (0.0014 * 1.00504) = 3.60140706
+//guess again
+predictedRating = 3.6 = 1.00504*3.60140706 = f_1_c[custPos] * f_1_m[movieIndex];
+//predictedRating = 3.61955815
+error = actualRating - predictedRating
+//error = 1.38044185
+
+//error is smaller!

@@ -1,0 +1,38 @@
+
+
+Total Ratings: 100480507
+Total Probe: 1408395
+Ratings w/o Probe: 99072112
+
+MovieIDs range from 1 to 17,770 sequentially. (requires 2 bytes)
+CustomerIDs range from 1 to 2,649,429, with gaps.
+There are 480,189 users. (requires 3 bytes)
+
+Max number of ratings for a movie: ?? (must be <= 480,189) (req. 3 bytes)
+Max number of ratings for a user: ?? (must be <= 17,770) (req. 2 bytes)
+
+Rating averages can be stored in two bytes as: (rating-1)*16384
+    ratings in [1 to 5] only
+    ie 1 = 0, 1.5 = 8192, 2 = 16384, 5 = 65536
+    to convert back: (stored/16384)+1
+    the granularity is: 0.00006103515625
+Rating offsets can be stored in two bytes as: (offset+5)*6553
+    offsets in [-5 to 5]
+    is -5 = 0, -3.5 = 9828, 5 = 65530
+    to convert back: (stored/6553)-5
+    the granularity is: 0.00015260
+
+
+Powers of 2:
+1   2^8     =           256
+2   2^16    =        65,536
+3   2^24    =    16,777,216
+4   2^32    = 4,294,967,296
+
+
+Python says:
+globalMovieCount: 17770
+globalRatingCount: 100480507
+globalAvgRating: 3.60428996442
+globalMovieAvgRating: 3.2281371945
+runTime(sec): 1628.625
